@@ -4,7 +4,7 @@ Interactive visualizations of non-trivial algorithms, built to demonstrate compu
 
 ## Purpose
 
-Portfolio project targeting big tech roles. Emphasis on correctness, clean architecture, and visual clarity. All algorithm logic is written in pure Go — no JS, no external dependencies on the logic layer.
+Emphasis on correctness, clean architecture, and visual clarity. All algorithm logic is written in pure Go — no JS, no external dependencies on the logic layer.
 
 ## Tech Stack
 
