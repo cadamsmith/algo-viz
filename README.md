@@ -66,7 +66,7 @@ algo-viz/
 │   ├── wasm/                    # compiled .wasm binaries (build output)
 │   └── wasm_exec.js             # Go's WASM runtime shim (copy from GOROOT)
 ├── dist/                        # Vite build output
-├── CLAUDE.md
+├── README.md
 ├── index.html
 ├── vite.config.ts
 ├── tailwind.config.ts
