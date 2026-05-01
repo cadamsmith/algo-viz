@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.DS_Store
+*.log
+
+# build artifacts
+public/wasm/*.wasm
+public/wasm_exec.js
+
+# editor
+.idea/
+.vscode/
