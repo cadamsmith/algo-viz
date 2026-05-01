@@ -51,4 +51,4 @@ Canvas API only — no D3, no charting libraries, no visualization frameworks. T
 
 ## Deployment
 
-Cloudflare Pages, auto-deploys on push to `main`. Build command is `./build.sh && npm run build`, output dir is `dist`. The Cloudflare build image already includes Go.
+Cloudflare Workers + Static Assets (the successor to classic Pages), auto-deploys on push to `main`. Build is `./build.sh && npm run build`, deploy is `npx wrangler deploy`, asset directory configured in `wrangler.toml`. The Cloudflare build image already includes Go.

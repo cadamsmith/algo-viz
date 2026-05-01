@@ -1,0 +1,8 @@
+name = "algo-viz"
+compatibility_date = "2025-09-01"
+
+# Pure static site — no Worker script. The Vite build output (dist/) is
+# served directly via Cloudflare's Static Assets. The router uses hash routes
+# so no SPA fallback is needed; the only path the server ever sees is `/`.
+[assets]
+directory = "./dist"

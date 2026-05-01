@@ -157,10 +157,12 @@ cp "$(go env GOROOT)/misc/wasm/wasm_exec.js" public/
 
 ## Deployment
 
-Deployed to Cloudflare Pages. Connects directly to the GitHub repo — pushes to `main` trigger automatic deploys. Live demo link is pinned in the repo description.
+Deployed to Cloudflare via the unified Workers + Static Assets flow (the successor to classic Pages). Connects directly to the GitHub repo — pushes to `main` trigger automatic builds and deploys. Live demo link is pinned in the repo description.
 
-Build settings in Cloudflare:
+Build settings in the Cloudflare dashboard:
 - **Build command:** `./build.sh && npm run build`
-- **Output directory:** `dist`
+- **Deploy command:** `npx wrangler deploy`
+
+Asset config lives in [`wrangler.toml`](./wrangler.toml) (`[assets] directory = "./dist"`). Hash routing keeps every URL on `/`, so no SPA fallback is needed.
 
 Note: Cloudflare's build image includes Go — no custom Docker image needed.
